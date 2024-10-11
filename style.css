@@ -1,20 +1,32 @@
 :root{
-    --cor-fundo:#DDA0DD ;
-    --cor-principal:#8A2BE2 ;
-    --cor-secundaria:#EE82EE ;
-    --cor-destaque:#FF00FF ;
-    --cor-texto:#000000 ;
+    --cor-fundo: #01080E;
+    --cor-principal:#200b1d ;
+    --cor-secundaria: #212333;
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
 }
 body{
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
-    display content: center;
-    align-itens: center;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 .caixa-principal{
     background-color: var(--cor-fundo);
     width: 90%;
     max-width: 600px;
+}
+button{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.5s;
+}
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
